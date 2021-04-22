@@ -4,4 +4,10 @@
     - name: Hello Message
       debug:
         msg: "Hello World!"
-
+  tasks:
+    - name: find files
+      find:
+        paths: /
+        recurse: no
+        file_type: any
+        
