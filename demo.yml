@@ -6,10 +6,10 @@
     - name: Hello Message
       debug:
         msg: "Hello World!"
-#- name: play2
-#  hosts: all
-#  tasks:
-#    - name: install vim
-#      yum:
-#        name: vim
-#        state: present
+- name: play2
+  hosts: all
+  tasks:
+    - name: install vim
+      yum:
+        name: vim
+        state: present
