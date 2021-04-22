@@ -1,7 +1,5 @@
----
-
 - name: play1
-  hosts: all
+  hosts: Demo Inventory
   tasks:
     - name: Hello Message
       debug:
