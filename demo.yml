@@ -1,13 +1,15 @@
-- name: demo script
+---
+
+- name: play1
   hosts: all
   tasks:
     - name: Hello Message
       debug:
         msg: "Hello World!"
+- name: play2
+  hosts: all
   tasks:
-    - name: find files
-      find:
-        paths: /
-        recurse: no
-        file_type: any
-        
+    - name: install vim
+      yum:
+        name: vim
+        state: present
