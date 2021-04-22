@@ -1,4 +1,4 @@
-- name: Hello World Sample
+- name: demo script
   hosts: all
   tasks:
     - name: Hello Message
