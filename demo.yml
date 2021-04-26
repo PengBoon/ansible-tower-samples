@@ -6,13 +6,14 @@
     - name: Hello Message
       debug:
         msg: "Hello World!"
-- name: play2
+#- name: play2
 #  hosts: all
 #  tasks:
 #    - name: install vim
 #      yum:
 #        name: vim
 #        state: present
+- name: play3
     hosts: all
     gather_facts: True
     gather_subset: interfaces
