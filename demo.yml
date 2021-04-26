@@ -7,9 +7,15 @@
       debug:
         msg: "Hello World!"
 - name: play2
-  hosts: all
-  tasks:
-    - name: install vim
-      yum:
-        name: vim
-        state: present
+#  hosts: all
+#  tasks:
+#    - name: install vim
+#      yum:
+#        name: vim
+#        state: present
+    hosts: all
+    gather_facts: True
+    gather_subset: interfaces
+    module_defaults:
+#      arista.eos.eos_facts:
+      gather_network_resources: interfaces
