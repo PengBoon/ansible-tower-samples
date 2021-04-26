@@ -13,10 +13,10 @@
 #      yum:
 #        name: vim
 #        state: present
-- name: play3
-    hosts: all
-    gather_facts: True
-    gather_subset: interfaces
-    module_defaults:
+#- name: play3
+#    hosts: all
+#    gather_facts: True
+#    gather_subset: interfaces
+#    module_defaults:
 #      arista.eos.eos_facts:
-      gather_network_resources: interfaces
+#      gather_network_resources: interfaces
